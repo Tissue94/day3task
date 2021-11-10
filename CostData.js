@@ -9,13 +9,20 @@ let tempArr = []
 for (let i = 0; i < olArr.length; i++) {
     tempArr.push(olArr[i].total)
 }
-//console.log(tempArr)
 
 //분기별 평균값
-//for (let i = 0; i < 3; i = i + 3) {
+let j = 0
 let i = 0
+
+let ttarr = []
 while(i<12){
     let temp1avg = (tempArr[i] + tempArr[i+1] + tempArr[i+2] / 3).toFixed(2)
     console.log(temp1avg)
     i = i + 3
+    ttarr.push(parseInt(temp1avg))
 }
+
+console.log(ttarr)
+
+
+//분기별 최솟값
